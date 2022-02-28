@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string.h>
+#include "function.h"
 using namespace std;
 int main()
 {
@@ -7,5 +8,7 @@ int main()
     char* hi = new char[10];
     cout << "Введите приветствие\n";
     cin.getline(hi, 10);
+    cout << multiply(4, 5);
+
 }
 

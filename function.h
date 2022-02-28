@@ -1,3 +1,5 @@
 #pragma once
-int multiply(int n, int m );
+
+int multiply(int n, int m);
+	
 
