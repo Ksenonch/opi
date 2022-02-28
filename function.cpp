@@ -1,5 +1,5 @@
 #include "function.h"
 
-void multiply(int n, int m) {
-
+int multiply(int n, int m) {
+	int result;
 }
