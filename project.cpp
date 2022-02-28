@@ -7,7 +7,9 @@ int main()
     char* hi = new char[10];
     cout << "Введите приветствие\n";
     cin.getline(hi, 10);
-    int n, m, result;
+    int n =4 , m = 5, result;
+    result = n * m;
+
 
 }
 
