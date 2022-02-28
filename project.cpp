@@ -9,7 +9,7 @@ int main()
     cout << "Введите приветствие\n";
     cin.getline(hi, 10);
     cout << multiply(4, 5);
-
+    cout << endl;
 
 }
 
