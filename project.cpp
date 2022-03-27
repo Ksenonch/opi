@@ -12,6 +12,7 @@ int main()
     cout << endl;
     int a, b;
     cout << "Введите два числа: ";
-
+    cin >> a;
+    cin >> b;
 }
 
