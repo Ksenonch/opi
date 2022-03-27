@@ -10,6 +10,7 @@ int main()
     cin.getline(hi, 10);
     cout << multiply(4, 5);
     cout << endl;
+    int x, y;
 
 }
 
