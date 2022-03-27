@@ -11,6 +11,7 @@ int main()
     cout << multiply(4, 5);
     cout << endl;
     int a, b;
+    cout << "Введите два числа: ";
 
 }
 
