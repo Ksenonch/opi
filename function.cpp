@@ -2,8 +2,8 @@
 
 #include "function.h"
 
-int multiply(int n, int m) {
+int multiply(int x, int y) {
 	int result;
-	result = n * m;
+	result = x * y;
 	return result;
 }
