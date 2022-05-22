@@ -46,7 +46,7 @@ jobs:
           path: doc
           name: Doxygen
       - name: Push to IO repository
-        uses: cpina/github-action-rush-to-another-repositiry@opi
+        uses: cpina/github-action-rush-to-another-repositiry@master
         env:
           KEY: ${{ secrets.KEY }}
         with:
@@ -55,4 +55,5 @@ jobs:
           destinaton-repository-name: 'new.io'
           user-email: '2020100538@pnu.edu.ru'
           commit-massage: 'Doxygen documentation'
+          target-branch: master
           
