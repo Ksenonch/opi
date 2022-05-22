@@ -34,26 +34,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      - uses: actions/checkout@v2
-      - name: DoxygenDocumentationCreate
-        uses: mattnotmitt/doxygen-action@v1.9.3
-        with:
-          doxyfile-path: './Doxyfile'
-      - name: upload result
-        uses: actions/upload-artifact@v3
-        with:
-          path: doc
-          name: Doxygen
-      - name: Push to IO repository
-        uses: cpina/github-action-rush-to-another-repositiry@main
-        env:
-          KEY: ${{ secrets.KEY }}
-        with:
-          source-directory: 'doc'
-          destination-github-username: 'Ksenonch'
-          destinaton-repository-name: 'new.io'
-          user-email: '2020100538@pnu.edu.ru'
-          commit-massage: 'Doxygen documentation'
-          target-branch: master
+      #lab8
+      - name: compile
+        run: |
+          sudo apt-get install g++-10
+          g++ project.cpp -o test.exe
+          ls
           
+      - name: Make exe
+        uses: actions/upload-artifact@v2
+        with:
+          name: Result
+          path: test.exe
