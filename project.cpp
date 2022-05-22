@@ -25,7 +25,7 @@ int main()
     
     char* hi = new char[10];
     cout << "Введите приветствие\n";
-    cin.getline(hi, 10)
+    cin.getline(hi, 10);
     cout << multiply(4, 5);
     cout << endl;
     cout << "Введите два числа: ";
