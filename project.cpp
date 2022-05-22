@@ -6,9 +6,9 @@ int a, b;
 /*!
 *    \brief multiply, multiplies two numders
 *    A function of type int, designed to multiply two numbers.
-*   @param a
+*   @param[in] a
 *   The first multiplier, type int.
-*   @param b
+*   @param[in] b
 *   The second multiplier, type int.
 *   @return
 *   Returns an int value, which is the result of multiplication
@@ -22,7 +22,7 @@ int multiply(int a, int b) {
 */
 int main()
 {
-    cout << "Hello World!\n";
+    
     char* hi = new char[10];
     cout << "Введите приветствие\n";
     cin.getline(hi, 10);
